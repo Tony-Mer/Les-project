@@ -1,0 +1,123 @@
+@font-face {
+    font-family: muller light; /* Имя шрифта */
+    src: url(MullerLight.otf); /* Путь к файлу со шрифтом */
+   }
+   
+@font-face {
+    font-family: muller bold; /* Имя шрифта */
+    src: url(MullerBold.otf); /* Путь к файлу со шрифтом */
+   }
+   
+   @font-face {
+    font-family: muller regular; /* Имя шрифта */
+    src: url(MullerRegular.otf); /* Путь к файлу со шрифтом */
+   }
+   
+   
+
+html, body, .container {
+    height: 100%;
+}
+.main {
+ /* Центрируем блоки */
+width:100%; /* Задаем ширину 100%, чтобы сделать ее резиновой */
+ /* Устанавливаем максимальную ширину */
+ height:784px;
+}
+.inline div{
+display:inline-block; /* Делаем блоки по горизонтали */
+display: -moz-inline-stack; /* Для FireFox 2, тот же самый, что и inline-block */
+ /* Выравниваем их сверху */
+/* Ставим дочкам размер шрифта, иначе примет значение родителя */
+/* Для IE 6 и IE 7 чтобы блоки были по горизонтали*/
+zoom: 1;
+*display: inline;
+
+}
+div.inline{font-size:0;} /* Ставим родителю значение 0, чтобы убрать отступы у блоков*/
+
+.left-block{
+width:23.5%; /*Задаем ширину в процентах чтобы сделать ее резиновой*/
+ height:784px;
+ vertical-align:top;
+}
+.content{
+width:45%;
+height:inherit;
+vertical-align:top;
+}
+.right-block{
+width:23.5%;
+height:inherit;
+vertical-align:top;
+}	
+
+.menu {font-family:muller light;font-size:17px;width:8%;height:784px;}
+.menu ul {padding:0 10 0 10;}
+.menu li {margin-top:30px;text-align:center;border: 2px solid transparent;padding:10px;}
+
+
+.menu li:hover {
+
+border:2px solid #b1c917;
+
+-webkit-border-top-left-radius: 20px; 
+-webkit-border-top-right-radius: 20px; 
+-webkit-border-bottom-right-radius: 20px; 
+-webkit-border-bottom-left-radius: 20px;
+
+}	
+
+.banner{
+	
+text-align:center;
+}
+
+.left-block:before {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    content: "";
+}
+.content:before {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    content: "";
+}
+
+.banner{
+display: inline-block;
+vertical-align: middle;
+text-align:center;
+width:100%;
+}	
+
+.banner_text{
+font-size:30px;
+text-transform:uppercase;
+width:80%;
+letter-spacing:3;
+line-height:1.5;
+color:#856675;
+font-family:muller bold;
+}
+
+.info_text_1{
+font-size:46px;
+text-transform:uppercase;
+line-height:1.5;
+color:black;
+font-family:muller bold;
+}
+
+.info_text_2{
+font-size:24px;
+color:black;
+background-color:white;
+font-family:muller regular;
+width:90%;
+text-align:center;
+padding:15px;
+
+}			
